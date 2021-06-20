@@ -3,6 +3,10 @@
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 * Vehicle length and ground clearance provided a non-random amount of variance to the mpg values in the dataset. Each value was less than 0.001. Intercept was also a significant variable which may mean that the analysis should be re-evaluated based on additional variables or that the variables we reviewed may need to be scaled or transformed to provide more insight. 
 
+![Vehicle Length](Resources/vehicle_length_lm.png)
+
+![Ground Clearance](Resources/ground_clearance_lm.png)
+
 Is the slope of the linear model considered to be zero? Why or why not?
 * No, the slope of the linear model is positive based on the positive coefficients of the variables that were tested. 
 

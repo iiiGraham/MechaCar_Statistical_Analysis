@@ -15,6 +15,9 @@ summary(mpg_analysis_1)$coefficient
 mpg_analysis_2 <- lm(mpg ~ vehicle_length + ground_clearance,data=mpg_data)
 summary(mpg_analysis_2)
 
+# graph the linear regressions
+ggplot(mpg_data, aes(x = vehicle_length, y=mpg)) + geom_point() + stat_smooth(method = "lm", col="red")
+ggplot(mpg_data, aes(x = ground_clearance, y=mpg)) + geom_point() + stat_smooth(method = "lm", col="red")
 
 # Suspension Coil Analysis ----------------------------------
 # load data into R dataframe
