@@ -42,6 +42,23 @@ Reviewing each lot as an independent sample it was determined that Lot 3 has sig
 ![Lot 3 T-Test](Resources/lot_3_t-test.png) 
 
 ## Study Design: MechaCar vs Competition
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. 
+### Metrics to Test
+Fuel Economy (mpg: cty/hwy/combined) based on manufacturer and vehicle body type.
 
-In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+What is the null hypothesis or alternative hypothesis?
+Hypothesis 1:
+* H null = There is no statistical difference between MechaCar fuel efficiency and the competition.
+* H alternative = MechaCar's fuel efficiency is significantly different than the competition. 
+
+*secondary alternative to compare relative difference in fuel efficiency (one-sided t-test)
+* MechCar's fuel efficiency is significantly better than the competition.
+
+### Testing Hypothesis
+To test the hypothesis MechaCar can run an ANOVA test. An ANOVA test would allow MechaCar to compare the fuel efficiency of its own vehicles and all competitors as categorical variables. For the ANOVA test, fuel efficiency will be the dependent variable and model of vehicle will be the independent variable. A two-way ANOVA test could also be run with a second independent variable such as vehicle body type (SUV, Sedan, etc.).
+
+If the analysis shows a significant different in fuel efficiency between manufacturers or vehicle body types further analysis could be run to determine if the differences are statistically significant at the population level.  
+
+Further analysis could include running a one-sided t-test for MechaCar vehicles overall and specific body-types versus the population dataset. A new alternative hypothesis would need to be tested by stating MechaCar's fuel efficiency is significantly higher or lower than the competition.
+
+### Data Required for Testing
+Data necessary to perform the suggested analysis would include a dataframe which included columns for manufacturer, body type, engine type, city mpg, highway mpg, and combined mpg. 
